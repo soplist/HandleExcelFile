@@ -1,0 +1,5 @@
+F:\HandleExcelFile\Model\bin\Debug\Model.dll
+F:\HandleExcelFile\Model\bin\Debug\Model.pdb
+F:\HandleExcelFile\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\HandleExcelFile\Model\obj\Debug\Model.dll
+F:\HandleExcelFile\Model\obj\Debug\Model.pdb

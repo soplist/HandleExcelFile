@@ -1,0 +1,12 @@
+F:\HandleExcelFile\BLL\bin\Debug\BLL.dll
+F:\HandleExcelFile\BLL\bin\Debug\BLL.pdb
+F:\HandleExcelFile\BLL\bin\Debug\DAL.dll
+F:\HandleExcelFile\BLL\bin\Debug\Model.dll
+F:\HandleExcelFile\BLL\bin\Debug\DAL.pdb
+F:\HandleExcelFile\BLL\bin\Debug\Model.pdb
+F:\HandleExcelFile\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\HandleExcelFile\BLL\obj\Debug\BLL.dll
+F:\HandleExcelFile\BLL\obj\Debug\BLL.pdb
+F:\HandleExcelFile\BLL\obj\Debug\Interop.Microsoft.Office.Core.dll
+F:\HandleExcelFile\BLL\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+F:\HandleExcelFile\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache

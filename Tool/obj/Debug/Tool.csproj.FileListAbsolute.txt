@@ -1,0 +1,12 @@
+F:\HandleExcelFile\Tool\bin\Debug\Tool.dll
+F:\HandleExcelFile\Tool\bin\Debug\Tool.pdb
+F:\HandleExcelFile\Tool\obj\Debug\Tool.csprojResolveAssemblyReference.cache
+F:\HandleExcelFile\Tool\obj\Debug\Tool.dll
+F:\HandleExcelFile\Tool\obj\Debug\Tool.pdb
+F:\HandleExcelFile\Tool\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\HandleExcelFile\Tool\bin\Debug\NPOI.dll
+F:\HandleExcelFile\Tool\bin\Debug\NPOI.OOXML.dll
+F:\HandleExcelFile\Tool\bin\Debug\NPOI.OpenXml4Net.dll
+F:\HandleExcelFile\Tool\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\HandleExcelFile\Tool\bin\Debug\NPOI.xml
+F:\HandleExcelFile\Tool\obj\Debug\Tool.csproj.ResolveComReference.cache

@@ -1,0 +1,15 @@
+F:\HandleExcelFile\DAL\bin\Debug\DAL.dll
+F:\HandleExcelFile\DAL\bin\Debug\DAL.pdb
+F:\HandleExcelFile\DAL\bin\Debug\Model.dll
+F:\HandleExcelFile\DAL\bin\Debug\Tool.dll
+F:\HandleExcelFile\DAL\bin\Debug\Model.pdb
+F:\HandleExcelFile\DAL\bin\Debug\Tool.pdb
+F:\HandleExcelFile\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\HandleExcelFile\DAL\obj\Debug\DAL.dll
+F:\HandleExcelFile\DAL\obj\Debug\DAL.pdb
+F:\HandleExcelFile\DAL\bin\Debug\NPOI.dll
+F:\HandleExcelFile\DAL\bin\Debug\NPOI.OOXML.dll
+F:\HandleExcelFile\DAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\HandleExcelFile\DAL\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\HandleExcelFile\DAL\bin\Debug\NPOI.OpenXml4Net.dll
+F:\HandleExcelFile\DAL\bin\Debug\NPOI.xml
