@@ -27,8 +27,21 @@ namespace UI
             //IsNumeric();
             //voidShowASC2();
             //testStringLength();
-            dayInterval();
-            
+            //dayInterval();
+            RegexAA();
+        }
+
+        private void RegexAA()
+        {
+            Regex regex = new Regex("[a-zA-Z]{2}");
+            string str = "3232Ab45cN34355ab";
+            string result = "";
+            System.Text.RegularExpressions.MatchCollection mc = regex.Matches(str);
+            for (int i = 0; i < mc.Count; i++)
+            {
+                result += mc[i].Value;
+            }
+            DialogResult dr = MessageBox.Show(result, "result");
         }
 
         private void testStringLength()

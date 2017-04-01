@@ -16,6 +16,9 @@
   <string key="exception8">Excel列数太大,超过赋值范围</string>
   <string key="exception9">一次只能关联两列</string>
   <string key="exception10">关联已存在</string>
+  <string key="exception11">当前行时间单位年份应大于上一行</string>
+  <string key="exception12">请保存完整的映射关系</string>
+  <string key="exception13">请依次输入完成的时间(年份)范围</string>
   <string key="columnVariableName">列变量名称</string>
   <string key="testStringLength">贷款种类:A.   是否快捷贷:B.   经办机构:C.   客户名称:D.   合同编号:E.   手机号码:F.   家庭住址:G.   还款方式:H.   贷款金额:</string>
   <string key="weight">权值</string>
@@ -31,4 +34,9 @@
   <string key="relationColumnContent">关联列内容</string>
   <string key="range">范围(年为单位)</string>
   <string key="relationContent">关联内容</string>
+  <string key="save">保存</string>
+  <string key="mustYear">年份必须为数字</string>
+  <string key="thisTaskDateRelation">本次计算涉及日期类型关联</string>
+  <string key="calculate">计算</string>
+  <string key="calculateDependentVariables">计算相关变量</string>
 </strings>

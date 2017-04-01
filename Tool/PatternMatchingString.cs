@@ -12,5 +12,6 @@ namespace Tool
         public static string dateRegStr = @"^(([1-2]\d{3})[-/](\d|\d\d)[-/](\d|\d\d))$|^(\d{8})$|\s|^$";
         public static string numberRegStr = @"(^[+-]?\d*[.]?\d*$)|\s|^$";
         public static string numberRegStr_1 = @"(^[+-]?\d*[.]?\d*$)";
+        public static string yearRegStr = @"^\d*[.]?\d*$";
     }
 }

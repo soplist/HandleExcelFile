@@ -59,6 +59,7 @@
     <Compile Include="Column.cs" />
     <Compile Include="ColumnType.cs" />
     <Compile Include="Constant.cs" />
+    <Compile Include="DateRelationDictionary.cs" />
     <Compile Include="ExcelHandle.cs" />
     <Compile Include="HandleData.cs" />
     <Compile Include="InputExcel.cs" />

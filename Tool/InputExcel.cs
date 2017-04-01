@@ -1,4 +1,5 @@
-﻿using NPOI.HSSF.UserModel;
+﻿using Microsoft.Office.Interop.Excel;
+using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using System;
@@ -32,14 +33,15 @@ namespace Tool
         /// <param name="isColumnWritten">DataTable的列名是否要导入</param>
         /// <param name="sheetName">要导入的excel的sheet的名称</param>
         /// <returns>导入数据行数(包含列名那一行)</returns>
-        public int DataTableToExcel(DataTable data, string sheetName, bool isColumnWritten)
+        public void DataTableToExcel(System.Data.DataTable data, string sheetName)
         {
-            int i = 0;
+            /*int i = 0;
             int j = 0;
             int count = 0;
             ISheet sheet = null;
 
             fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            
             if (fileName.IndexOf(".xlsx") > 0) // 2007版本
                 workbook = new XSSFWorkbook();
             else if (fileName.IndexOf(".xls") > 0) // 2003版本
@@ -80,13 +82,73 @@ namespace Tool
                     ++count;
                 }
                 workbook.Write(fs); //写入到excel
+                workbook.Close();
+                fs.Close();
                 return count;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
                 return -1;
+            }*/
+            if (data == null)
+
+                return;
+
+            int rowNum = data.Rows.Count;
+
+            int columnNum = data.Columns.Count;
+
+            int rowIndex = 1;
+
+            int columnIndex = 0;
+
+
+
+            Application xlApp = new Application();
+
+            xlApp.DefaultFilePath = "";
+
+            xlApp.DisplayAlerts = true;
+
+            xlApp.SheetsInNewWorkbook = 1;
+
+            Workbook xlBook = xlApp.Workbooks.Add(true);
+
+
+
+            foreach (DataColumn dc in data.Columns)
+            {
+
+                columnIndex++;
+
+                xlApp.Cells[rowIndex, columnIndex] = dc.ColumnName;
+
             }
+
+
+
+            for (int i = 0; i < rowNum; i++)
+            {
+
+                rowIndex++;
+
+                columnIndex = 0;
+
+                for (int j = 0; j < columnNum; j++)
+                {
+
+                    columnIndex++;
+
+                    xlApp.Cells[rowIndex, columnIndex] = data.Rows[i][j].ToString();
+
+                }
+
+            }
+
+            //xlBook.SaveCopyAs(HttpUtility.UrlDecode(strFileName, System.Text.Encoding.UTF8));
+
+            xlBook.SaveCopyAs(fileName);
         }
 
         /// <summary>
@@ -95,10 +157,10 @@ namespace Tool
         /// <param name="sheetName">excel工作薄sheet的名称</param>
         /// <param name="isFirstRowColumn">第一行是否是DataTable的列名</param>
         /// <returns>返回的DataTable</returns>
-        public DataTable ExcelToDataTable(string sheetName, bool isFirstRowColumn)
+        public System.Data.DataTable ExcelToDataTable(string sheetName, bool isFirstRowColumn)
         {
             ISheet sheet = null;
-            DataTable data = new DataTable();
+            System.Data.DataTable data = new System.Data.DataTable();
             int startRow = 0;
             try
             {

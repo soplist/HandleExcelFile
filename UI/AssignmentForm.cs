@@ -51,6 +51,7 @@ namespace UI
             initUI();
             initDataGridView();
             clearNotNeedData(transmitData);
+            transmitData.selectedColumnVariableDict = this.selectedColumnVariableDict;
         }
 
         public void clearNotNeedData(TransmitData transmitData)
@@ -212,7 +213,27 @@ namespace UI
 
         private void OKButton_Click(object sender, EventArgs e)
         {
-            printSelectedColumnVariableDict();
+            //printSelectedColumnVariableDict();
+            //printThisTaskDateRelation(transmitData.dateRelationDictionaryList);
+
+            EditFormulaForm editFormulaForm = new EditFormulaForm(transmitData);
+            editFormulaForm.Show();
+        }
+
+        private void printThisTaskDateRelation(List<DateRelationDictionary> dateRelationDictionaryList)
+        {
+            string str = "";
+
+            foreach (DateRelationDictionary dateRelationDictionary in dateRelationDictionaryList)
+            {
+                str += dateRelationDictionary.variableName + "!";
+                foreach (KeyValuePair<float, float> kvp in dateRelationDictionary)
+                {
+                    str += kvp.Key + "," + kvp.Value + ";";
+                }
+                str += "\n";
+            }
+            DialogResult dr1 = MessageBox.Show(str, "message");
         }
 
         private void printSelectedColumnVariableDict()

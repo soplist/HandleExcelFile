@@ -27,3 +27,4 @@ F:\HandleExcelFile\UI\obj\Debug\UI.ChooseColumnForm.resources
 F:\HandleExcelFile\UI\obj\Debug\UI.AssignmentForm.resources
 F:\HandleExcelFile\UI\obj\Debug\UI.Form1.resources
 F:\HandleExcelFile\UI\obj\Debug\UI.SetDateTypeParameterForm.resources
+F:\HandleExcelFile\UI\obj\Debug\UI.EditFormulaForm.resources

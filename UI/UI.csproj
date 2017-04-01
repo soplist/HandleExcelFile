@@ -56,6 +56,12 @@
     <Compile Include="ChooseColumnForm.Designer.cs">
       <DependentUpon>ChooseColumnForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditFormulaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFormulaForm.Designer.cs">
+      <DependentUpon>EditFormulaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChooseColumnForm.resx">
       <DependentUpon>ChooseColumnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFormulaForm.resx">
+      <DependentUpon>EditFormulaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

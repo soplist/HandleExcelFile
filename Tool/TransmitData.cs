@@ -14,6 +14,8 @@ namespace Tool
         private Dictionary<string, string> _columnTypeDict;
         private List<Column<string>> _noRepeatingColumnList;
         private List<string> _selectedColumn;
+        private Dictionary<string, char> _selectedColumnVariableDict;
+        private List<DateRelationDictionary> _dateRelationDictionaryList;
 
         private static string dataTableStr = "dataTable";
         private static string columnsNameListStr = "columnsNameList";
@@ -61,6 +63,18 @@ namespace Tool
         {
             set { _selectedColumn = value; }
             get { return _selectedColumn; }
+        }
+
+        public Dictionary<string, char> selectedColumnVariableDict
+        {
+            set { _selectedColumnVariableDict = value; }
+            get { return _selectedColumnVariableDict; }
+        }
+
+        public List<DateRelationDictionary> dateRelationDictionaryList
+        {
+            set { _dateRelationDictionaryList = value; }
+            get { return _dateRelationDictionaryList; }
         }
 
         public void setNull(string propertyName)
